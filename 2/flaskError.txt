@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\runpy.py", line 193, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\LukeBenson\AppData\Local\Programs\Python\Python38-32\Scripts\flask.exe\__main__.py", line 9, in <module>
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\flask\cli.py", line 966, in main
+    cli.main(prog_name="python -m flask" if as_module else None)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\flask\cli.py", line 586, in main
+    return super(FlaskGroup, self).main(*args, **kwargs)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\click\core.py", line 717, in main
+    rv = self.invoke(ctx)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\click\core.py", line 1137, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\click\core.py", line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\click\core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\click\decorators.py", line 64, in new_func
+    return ctx.invoke(f, obj, *args, **kwargs)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\click\core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\flask\cli.py", line 848, in run_command
+    app = DispatchingApp(info.load_app, use_eager_loading=eager_loading)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\flask\cli.py", line 305, in __init__
+    self._load_unlocked()
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\flask\cli.py", line 330, in _load_unlocked
+    self._app = rv = self.loader()
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\flask\cli.py", line 392, in load_app
+    app = locate_app(self, import_name, None, raise_if_not_found=False)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\flask\cli.py", line 240, in locate_app
+    __import__(module_name)
+  File "C:\Users\LukeBenson\Documents\Work\LondonWeek1\app.py", line 11, in <module>
+    def about():
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1314, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 98, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1274, in add_url_rule
+    rule = self.url_rule_class(rule, methods=methods, **options)
+  File "c:\users\lukebenson\appdata\local\programs\python\python38-32\lib\site-packages\werkzeug\routing.py", line 641, in __init__
+    raise ValueError("urls must start with a leading slash")
+ValueError: urls must start with a leading slash
